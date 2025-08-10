@@ -8,7 +8,7 @@ on:
     branches:
       - main
     paths:
-      - "db_migration_etl.py"
+      - "models_and_migration_etl.py"
       - "requirements.txt"
       - ".github/workflows/etl_pipeline.yml" # Rerun if workflow itself changes
 
@@ -59,7 +59,7 @@ jobs:
 
       - name: Run ETL Script
         id: run_script
-        run: python db_migration_etl.py 2>&1 | tee etl_output.log
+        run: python models_and_migration_etl.py 2>&1 | tee etl_output.log
 
       - name: Check for new data
         # (Optional: for debugging)
