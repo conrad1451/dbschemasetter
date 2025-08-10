@@ -59,7 +59,7 @@ jobs:
 
       - name: Run ETL Script
         id: run_script
-        run: python models_and_migration_etl.py 2>&1 | tee etl_output.log
+        run: python models_and_migration_etl.py
 
       - name: Check for new data
         # (Optional: for debugging)
