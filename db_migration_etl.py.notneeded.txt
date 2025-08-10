@@ -3,7 +3,7 @@ import os
 from sqlalchemy import create_engine
 
 from database import Base
-from models import User  # This import is necessary to register the User class.
+# from models import User  
 
 # conn_string = "sqlite:///mydatabase.db"
 AVIEN_DB_CONNECTION = os.getenv('AVIEN_DB_CONNECTION')
