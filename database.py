@@ -1,4 +1,4 @@
-# schema_base.py
+# database.py
 
 from sqlalchemy.orm import declarative_base
 
